@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <input type="text" id="display">
+    </div>
+    <div class="cal">
+      <table>
+        <tr>
+          <td>
+            <button class="cubic" onclick="display.value =display.value**3"><img src="images/cube.jpg" width="20px" alt="pic"></button>
+          </td>
+          <td>
+            <button class="square" onclick="display.value =Math.pow(display.value, 2) "><img src="images/sqr.png"  width="20px"></button>
+          </td>
+          <td>
+            <button class="dot" onclick="display.value +='.' ">.</button>
+           </td>
+          <td>
+            <button class="clear" onclick="display.value =' ' ">AC</button>
+          </td>
+        </tr>
+       <tr>
+         <td><button onclick="display.value +='7' ">7</button></td>
+         <td><button onclick="display.value +='8' ">8</button></td>
+         <td><button onclick="display.value +='9' ">9</button></td>
+         <td><button class="add"onclick="display.value +='+' " >+</button></td>
+       </tr>
+      <tr>
+        <td><button onclick="display.value +='4' ">4</button></td>
+        <td><button onclick="display.value +='5' ">5</button></td>
+        <td><button onclick="display.value +='6' ">6</button></td>
+        <td><button class="minus"onclick="display.value +='-' " >-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="display.value +='1' ">1</button></td>
+        <td><button onclick="display.value +='2' ">2</button></td>
+        <td><button onclick="display.value +='3' ">3</button></td>
+        <td><button class="times" onclick="display.value +='*' ">*</button>
+        </td>
+      </tr>
+      <tr> 
+        <td><button onclick="display.value +='.' ">.</button>
+        </td>
+        <td><button onclick="display.value +='0' ">0</button></td>
+        <td><button class="division" onclick="display.value +='/' ">/</button>
+        <td><button class="equalsign" onclick="display.value =eval(display.value) ">=</button>
+        </td>
+     </tr>
+    </table>
+    </div>
+  </div>
+  
+</body>
+</html>
